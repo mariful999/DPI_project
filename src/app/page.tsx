@@ -1,6 +1,9 @@
-import Banner from "@/components/Banner";
+import Banner from "@/components/homeSection/Banner";
 import Container from "./ui/Container";
-import Card from "@/components/Card";
+import Card from "@/components/homeSection/Card";
+import WellCome from "@/components/homeSection/WellCome";
+import WhyChoseUs from "@/components/homeSection/WhyChoseUs";
+import OurCourses from "@/components/homeSection/OurCourses";
 
 export default function Home() {
   return (
@@ -8,10 +11,13 @@ export default function Home() {
       <div>
         <Container>
         <Banner></Banner>
+        <WellCome></WellCome>
+        </Container>
+        <WhyChoseUs></WhyChoseUs>
+        <OurCourses></OurCourses>
         <Card></Card>
           <div className="mt-9"><h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos, totam repellat expedita deserunt reprehenderit numquam harum? Ullam facere harum, error voluptatum, molestias eaque optio atque voluptatibus non, distinctio officiis. </h1>
           </div>
-        </Container>
       </div>
     </main>
   );

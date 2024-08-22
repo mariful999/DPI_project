@@ -1,6 +1,6 @@
 import Container from '@/app/ui/Container'
 import React from 'react'
-import { profileImage } from '../../public';
+import { profileImage } from '@/app/assets/index';
 import Image from 'next/image';
 
 const Card = () => {
@@ -71,9 +71,11 @@ const Card = () => {
             </div>
             <div className='grid grid-cols-4 gap-4 '>
                 {cardSection.map((item)=> 
-                <div key={item.id} className='border border-black'>
+                <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-yellow-400 cursor-pointer'>
                     <Image src={item.picture} alt="profile" className=''></Image>    
-                    <h1 className='text-center text-2xl font-semibold'>{item.name}</h1>
+                    <h1 className='text-center text-2xl font-semibold hover:text-blue-600'>{item.name}</h1>
+                    <p className='text-center text-sm h-10 '>{item.title}</p>
+                    <div className='text-center'><button className='p-2 px-8 hover:bg-green-400 bg-slate-400 rounded-md '>Details</button></div>
                 </div>
             )}
             </div>

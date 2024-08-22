@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { saliderOne } from "../../../public";
+import { saliderOne } from "../assets";
 import Container from "../ui/Container";
 
 const Registration = () => {
