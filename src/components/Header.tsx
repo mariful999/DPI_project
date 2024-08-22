@@ -1,5 +1,5 @@
 import Container from '@/app/ui/Container'
-import { link } from 'fs';
+
 import Link from 'next/link';
 import { title } from 'process'
 import React from 'react'
@@ -11,6 +11,7 @@ const Header = () => {
         {title:"About" , link:"/about"},
         {title:"Course " , link:"/course"},
         {title:"Contact" , link:"/contact"},
+        {title:"Registration" , link:"/registration"}
     ]
   return (
     <div className='bg-gray-600 sticky top-0 '>
@@ -21,9 +22,8 @@ const Header = () => {
                 </div>
             <div className='flex gap-4 items-center'>
                 <div className='flex gap-4 '>
-                {navigation?.map((item)=>(
-
-                        <Link key={title} href={item?.link} className='underline underline-offset-4 hover:text-red-700 cursor-pointer'>{item.title}
+                {navigation?.map((item,index)=>(
+                        <Link key={index} href={item?.link} className='underline underline-offset-4 hover:text-red-700 duration-300 cursor-pointer'>{item.title}
                         </Link>
                 ))}
             </div>
