@@ -10,5 +10,6 @@ import singleImage2 from "./fast-pnt03.jpg"
 import bannerImage from "./fast-pnt07.jpg"
 import bannerImage2 from "./images.jpeg"
 import choseUs from "./fast-pnt1.jpg"
+import logo from "./Picture2-removebg-preview.png"
 
-export {saliderOne,saliderTwo,saliderThree,profileImage,groupImage,singleImage1,singleImage2,bannerImage,bannerImage2,choseUs}
+export {saliderOne,saliderTwo,saliderThree,profileImage,groupImage,singleImage1,singleImage2,bannerImage,bannerImage2,choseUs,logo}

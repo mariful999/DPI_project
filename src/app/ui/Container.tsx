@@ -1,8 +1,12 @@
 import React from 'react'
-
-const Container = ({children}) => {
+import { twMerge } from 'tailwind-merge';
+interface Props{
+  children:React.ReactNode;
+  className?:string
+}
+const Container = ({children,className}:Props) => {
   return (
-    <div className='max-w-screen-xl mx-auto '>{children}</div>
+    <div className={twMerge('max-w-screen-xl mx-auto',className)}>{children}</div>
   )
 }
 

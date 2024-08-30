@@ -7,10 +7,9 @@ import { BsPersonArmsUp } from "react-icons/bs";
 
 const WhyChoseUs = () => {
   return (
-    <div className='h-full flex justify-between bg-blue-800'>
+    <div className='h-full lg:flex justify-between bg-blue-800'>
         <div>
             <Image src={choseUs} alt="choseUs" className='w-full'></Image>
-            
         </div>
         <div className='text-white '>
             <h1 className='text-4xl uppercase font-semibold text-center p-6 underline underline-offset-8'>Why chose us</h1>

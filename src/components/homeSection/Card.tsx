@@ -64,12 +64,12 @@ const Card = () => {
 
 ];
   return (
-    <Container>
+    <Container className=''>
         <div>
             <div>
-                <h1 className='text-3xl font-bold text-center p-10'>Meet Ours Teachers</h1>
+                <h1 className='text-3xl font-bold text-center text-yellow-700 underline underline-offset-8 p-10'>Meet Ours Teachers</h1>
             </div>
-            <div className='grid grid-cols-4 gap-4 '>
+            <div className='lg:grid grid-cols-4 gap-4 shadow-slate-600'>
                 {cardSection.map((item)=> 
                 <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-yellow-400 cursor-pointer'>
                     <Image src={item.picture} alt="profile" className=''></Image>    

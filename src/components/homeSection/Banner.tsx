@@ -5,14 +5,14 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <Container>
+    <Container className='py-0'>
       <div>
         <div className='relative h-full '>
         <Image  src={bannerImage2} alt="banner" className='w-full'></Image>
         </div>
-      <div className='absolute text-white top-60 p-20 '>
-        <p className='text-xl font-semibold'>The goal of education</p>
-        <h1 className='text-4xl font-bold'>Join the bigest comunity of Memoir Academy Ltd</h1>
+      <div className='absolute text-white top-40  lg:top-60 lg:p-20 '>
+        <p className='text-sm lg:text-xl  font-semibold'>The goal of education</p>
+        <h1 className=' text-xl lg:text-4xl font-bold'>Join the bigest comunity of Memoir Academy Ltd</h1>
       </div>
       </div>
     </Container>
