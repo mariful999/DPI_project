@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className="mx-6 py-10 text-center md:text-left">
-        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="lg:flex justify-between">
           <div>
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               <span className="me-3 [&>svg]:h-4 [&>svg]:w-4">
@@ -33,41 +33,11 @@ const Footer = () => {
             <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
 
-          <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">Products</h6>
-            <p className="mb-4">
-              <Link href="#!">Angular</Link>
-            </p>
-            <p className="mb-4">
-              <Link href="#!">React</Link>
-            </p>
-            <p className="mb-4">
-              <Link href="#!">Vue</Link>
-            </p>
-            <p>
-              <Link href="#!">Laravel</Link>
-            </p>
-          </div>
 
-          <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">Useful links</h6>
-            <p className="mb-4">
-              <Link href="#!">Pricing</Link>
-            </p>
-            <p className="mb-4">
-              <Link href="#!">Settings</Link>
-            </p>
-            <p className="mb-4">
-              <Link href="#!">Orders</Link>
-            </p>
-            <p>
-              <Link href="#!">Help</Link>
-            </p>
-          </div>
 
           <div>
             <h6 className="mb-4 lg:flex justify-center font-semibold uppercase md:justify-start">Contact</h6>
-            <p className="mb-4 lg:flex items-center justify-center md:justify-start">
+            <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
@@ -77,7 +47,7 @@ const Footer = () => {
               House no 18 (1st floor), Road no. 2, Mohammodia Housing society,  Mohammadpur, Dhaka.
 
             </p>
-            <p className="mb-4 lg:flex items-center justify-center md:justify-start">
+            <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />

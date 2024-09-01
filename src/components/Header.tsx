@@ -31,26 +31,26 @@ const Header = () => {
                             <Image 
                                 src={logo} 
                                 alt="logo" 
-                                className='w-20 lg:w-24 rounded-md hover:bg-green-300 duration-300'
+                                className='w-20 lg:w-36 rounded-md hover:bg-green-300 duration-300'
                             />
                         </Link>
                     </div>
 
                     {/* Hamburger Icon */}
                     <div className='lg:hidden'>
-                        <button onClick={toggleMenu} className='text-3xl'>
-                            {isOpen ? <FaTimes /> : <FaBars />}
+                        <button onClick={toggleMenu} className='text-3xl hover:text-red-800'>
+                            {isOpen ? <FaTimes className='' /> : <FaBars />}
                         </button>
                     </div>
 
                     {/* Navigation */}
-                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-16 left-0 w-full lg:w-auto bg-yellow-100 lg:bg-transparent p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
+                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-16 left-80 w-1/2 rounded-md lg:w-auto bg-blue-500 lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
                         <div className='flex flex-col lg:flex-row lg:gap-4'>
-                            {navigation.map((item, index) => (
+                            {navigation.map((item,index) => (
                                 <Link 
-                                    key={item.title} 
+                                    key={index} 
                                     href={item.link} 
-                                    className='underline underline-offset-4 hover:text-red-700 duration-300 cursor-pointer'
+                                    className='lg:underline underline-offset-4 hover:text-red-700 duration-300 cursor-pointer'
                                     onClick={() => setIsOpen(false)}  // Close menu on link click
                                 >
                                     {item.title}
