@@ -44,7 +44,7 @@ const Header = () => {
                     </div>
 
                     {/* Navigation */}
-                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-16 left-80 w-1/2 rounded-md lg:w-auto bg-blue-500 lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
+                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-16 left-80 w-40 rounded-md lg:w-auto bg-blue-500 lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
                         <div className='flex flex-col lg:flex-row lg:gap-4'>
                             {navigation.map((item,index) => (
                                 <Link 
