@@ -9,7 +9,7 @@ const WellCome = () => {
         <div className=' lg:flex  justify-between h-full bottom-10 gap-10'>
             <div className='flex'>
                 <div className=''>
-                <Image src={groupImage} className='w-full' alt="group" ></Image>
+                <Image src={groupImage} className='lg:w-full' alt="group" ></Image>
                 </div>
             </div>
             <div className='flex-1 p-10'>

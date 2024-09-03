@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <Container className='py-0'>
       <div>
-        <div className='relative h-full '>
-        <Image  src={bannerImage2} alt="banner" className='w-full'></Image>
+        <div className='relative lg:h-full '>
+        <Image  src={bannerImage2} alt="banner" className='h-64 w-full'></Image>
         </div>
       <div className='absolute text-white top-40  lg:top-60 lg:p-20 '>
         <p className='text-sm lg:text-xl  font-semibold'>The goal of education</p>

@@ -8,7 +8,7 @@ import Mission from "@/components/homeSection/Mission";
 
 export default function Home() {
   return (
-    <main>
+    <main className=" overflow-x-hidden">
       <div>
         <Container>
         <Banner/>
