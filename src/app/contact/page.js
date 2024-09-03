@@ -1,10 +1,10 @@
-import React from 'react'
-import Container from '../ui/Container'
+import React from "react";
+import Container from "../ui/Container";
 
 const Contact = () => {
   return (
     <Container>
-      <div>
+      <div className="text-blue-100 uppercase ">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
         commodi blanditiis itaque earum soluta, voluptatem, quibusdam libero in
         ullam fugiat enim laborum. Necessitatibus, enim minima? Mollitia eum
@@ -12,6 +12,6 @@ const Contact = () => {
       </div>
     </Container>
   );
-}
+};
 
-export default Contact
+export default Contact;

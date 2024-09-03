@@ -41,21 +41,21 @@ const Card = () => {
     title: "web developer"
   },
   {
-    id: "66c6e12981db1c0b15278cd9",
+    id: "66c6e12981db1c0b15278ck8",
     index: 5,
     picture: profileImage,
     name: "MD Mariful islam",
     title: "web developer"
   },
   {
-    id: "66c6e12981db1c0b15278cd9",
+    id: "66c6e12981db1c0b15278cl9",
     index: 6,
     picture: profileImage,
     name: "MD Mariful islam",
     title: "web developer"
   },
   {
-    id: "66c6e12981db1c0b15278cd9",
+    id: "66c6e12981db1c0b15278cr9",
     index: 7,
     picture: profileImage,
     name: "MD Mariful islam",

@@ -5,14 +5,28 @@ import { bannerImage } from '@/app/assets';
 import Container from '@/app/ui/Container';
 import Image from 'next/image';
 import React from 'react';
+import { StaticImageData } from 'next/image';
+
+// Define the Course type
+type Course = {
+    id: string;
+    index: number;
+    picture: StaticImageData; // Use this type since bannerImage is imported via Next.js Image.
+    name: string;
+    title: string;
+    description: string;
+    duration: string;
+    instructor: string;
+    syllabus: string[];
+};
 
 const OurCourses = () => {
-    const [selectedCourse, setSelectedCourse] = useState(null);
+    const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
 
     // Define the cardSection array with more details
-    const cardSection = [
+    const cardSection: Course[] = [
         {
-            id: "66c6e1296b09a2ee50f7d08e",
+            id: "1",
             index: 0,
             picture: bannerImage,
             name: "Insurance Training Programme",
@@ -23,7 +37,7 @@ const OurCourses = () => {
             syllabus: ["Introduction to Insurance", "Advanced Sales Techniques", "Career Development", "Client Management"]
         },
         {
-            id: "66c6e129e87ceff9e742a5c7",
+            id: "2",
             index: 1,
             picture: bannerImage,
             name: "Banking Training Programme",
@@ -34,7 +48,7 @@ const OurCourses = () => {
             syllabus: ["AML/CFT Overview", "Regulatory Framework", "Risk Assessment", "Compliance Strategies"]
         },
         {
-            id: "66c6e129a8b879133445b62f",
+            id: "3",
             index: 2,
             picture: bannerImage,
             name: "Corporate Training Programme",
@@ -46,7 +60,7 @@ const OurCourses = () => {
         },
     ];
 
-    const handleDetailsClick = (course) => {
+    const handleDetailsClick = (course: any) => {
         setSelectedCourse(course);
     };
 
@@ -63,7 +77,7 @@ const OurCourses = () => {
                 <div className='flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row justify-items-center px-4 lg:px-0 gap-6 mt-8'>
                     {cardSection.map((item) => 
                         <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-green-300 cursor-pointer'>
-                            <Image src={item.picture} alt="profile" className='w-full h-auto object-cover'></Image>    
+                            <Image src={item.picture} alt="profile" className='object-cover' />    
                             <h1 className='text-center text-lg sm:text-xl font-semibold hover:text-blue-600'>{item.name}</h1>
                             <p className='text-center text-sm h-10'>{item.title}</p>
                             <div className='text-center'>
