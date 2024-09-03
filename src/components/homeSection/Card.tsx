@@ -69,9 +69,9 @@ const Card = () => {
             <div>
                 <h1 className='text-3xl font-bold text-center text-yellow-700 underline underline-offset-8 p-10'>Meet Ours Teachers</h1>
             </div>
-            <div className='lg:grid grid-cols-4 p-8 lg:p-0 gap-4 shadow-slate-600'>
+            <div className='lg:grid grid-cols-4 p-11 lg:p-0 gap-4  shadow-slate-600'>
                 {cardSection.map((item)=> 
-                <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-yellow-400 cursor-pointer'>
+                <div key={item.id} className='hover:border-black bg-slate-100 p-5 rounded-md duration-500 hover:bg-yellow-400 cursor-pointer'>
                     <Image src={item.picture} alt="profile" className='w-'></Image>    
                     <h1 className='text-center text-2xl font-semibold hover:text-blue-600'>{item.name}</h1>
                     <p className='text-center text-sm h-10 '>{item.title}</p>

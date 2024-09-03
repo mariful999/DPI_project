@@ -31,7 +31,7 @@ const Header = () => {
                             <Image 
                                 src={logo} 
                                 alt="logo" 
-                                className='w-20 lg:w-36 rounded-md hover:bg-green-300 duration-300'
+                                className='w-32 lg:w-36 rounded-md duration-300'
                             />
                         </Link>
                     </div>
