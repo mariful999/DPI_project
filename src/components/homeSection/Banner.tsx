@@ -8,9 +8,9 @@ const Banner = () => {
     <Container className='py-0'>
       <div>
         <div className='relative lg:h-full '>
-        <Image  src={bannerImage2} alt="banner" className='h-64 w-full'></Image>
+        <Image  src={bannerImage2} alt="banner" className='h-96 w-full'></Image>
         </div>
-      <div className='absolute text-white top-40  lg:top-60 lg:p-20 '>
+      <div className='absolute text-white top-40 lg:p-20 '>
         <p className='text-sm lg:text-xl  font-semibold'>The goal of education</p>
         <h1 className=' text-xl lg:text-4xl font-bold'>Join the bigest comunity of Memoir Academy Ltd</h1>
       </div>

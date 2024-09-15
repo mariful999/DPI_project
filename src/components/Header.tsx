@@ -5,9 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from 'next/navigation';  // Using usePathname
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();  // Get current pathname
+
     const navigation = [
         { title: "Home", link: "/" },
         { title: "About", link: "/about" },
@@ -22,7 +25,7 @@ const Header = () => {
     };
 
     return (
-        <div className='bg-yellow-100 sticky top-0 z-50'>
+        <div className='bg-white sticky top-0 z-50'>
             <Container>
                 <div className='flex justify-between items-center h-20'>
                     {/* Logo */}
@@ -31,7 +34,7 @@ const Header = () => {
                             <Image 
                                 src={logo} 
                                 alt="logo" 
-                                className='w-32  lg:w-36 rounded-md duration-300'
+                                className='w-32 lg:w-44 rounded-md duration-300'
                             />
                         </Link>
                     </div>
@@ -46,11 +49,12 @@ const Header = () => {
                     {/* Navigation */}
                     <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-20 right-0 lg:w-auto bg-blue-500 lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
                         <div className='flex flex-col lg:flex-row lg:gap-4'>
-                            {navigation.map((item,index) => (
+                            {navigation.map((item, index) => (
                                 <Link 
                                     key={index} 
                                     href={item.link} 
-                                    className='lg:underline underline-offset-4 hover:text-red-700 duration-300 cursor-pointer'
+                                    className={` duration-300 cursor-pointer 
+                                        ${pathname === item.link ? 'text-red-700 underline' : 'hover:text-red-700 no-underline'}`}  // Apply active styles only to the clicked link
                                     onClick={() => setIsOpen(false)}  // Close menu on link click
                                 >
                                     {item.title}
