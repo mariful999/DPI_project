@@ -2,7 +2,7 @@
 
 import Container from '@/app/ui/Container';
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { profileImage } from '@/app/assets/index';
 import { FaFacebook, FaEnvelope } from 'react-icons/fa'; // Importing icons from react-icons
 
@@ -21,7 +21,7 @@ const Card: React.FC = () => {
 
   const cardSection: Teacher[] = [
     {
-      id: "66c6e1296b09a2ee50f7d08e",
+      id: "1",
       picture: profileImage,
       name: "MD Mariful islam",
       title: "Web Developer",
@@ -30,7 +30,7 @@ const Card: React.FC = () => {
       email: "mdmarifulislam@example.com"
     },
     {
-      id: "66c6e1296b09a2ee50f7d08e",
+      id: "2",
       picture: profileImage,
       name: "MD Mariful islam",
       title: "Web Developer",
@@ -39,7 +39,7 @@ const Card: React.FC = () => {
       email: "mdmarifulislam@example.com"
     },
     {
-      id: "66c6e1296b09a2ee50f7d08e",
+      id: "3",
       picture: profileImage,
       name: "MD Mariful islam",
       title: "Web Developer",
@@ -48,7 +48,7 @@ const Card: React.FC = () => {
       email: "mdmarifulislam@example.com"
     },
     {
-      id: "66c6e1296b09a2ee50f7d08e",
+      id: "4",
       picture: profileImage,
       name: "MD Mariful islam",
       title: "Web Developer",
