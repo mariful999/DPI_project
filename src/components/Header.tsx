@@ -41,7 +41,7 @@ const Header = () => {
 
                     {/* Hamburger Icon */}
                     <div className='lg:hidden'>
-                        <button onClick={toggleMenu} className='text-3xl hover:text-red-800'>
+                        <button onClick={toggleMenu} className='text-3xl hover:text-blue-500'>
                             {isOpen ? <FaTimes className='' /> : <FaBars />}
                         </button>
                     </div>
@@ -54,7 +54,7 @@ const Header = () => {
                                     key={index} 
                                     href={item.link} 
                                     className={` duration-300 cursor-pointer 
-                                        ${pathname === item.link ? 'text-red-700 underline' : 'hover:text-red-700 no-underline'}`}  // Apply active styles only to the clicked link
+                                        ${pathname === item.link ? 'text-blue-600 underline' : 'hover:text-blue-600 no-underline'}`}  // Apply active styles only to the clicked link
                                     onClick={() => setIsOpen(false)}  // Close menu on link click
                                 >
                                     {item.title}
