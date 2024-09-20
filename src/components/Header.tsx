@@ -41,20 +41,20 @@ const Header = () => {
 
                     {/* Hamburger Icon */}
                     <div className='lg:hidden'>
-                        <button onClick={toggleMenu} className='text-3xl hover:text-blue-500'>
+                        <button onClick={toggleMenu} className='text-3xl hover:text-[#e22727]'>
                             {isOpen ? <FaTimes className='' /> : <FaBars />}
                         </button>
                     </div>
 
                     {/* Navigation */}
-                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-20 right-0 lg:w-auto bg-blue-500 lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
+                    <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:gap-4 absolute lg:static top-20 right-0 lg:w-auto bg-[#32a6ab] lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}>
                         <div className='flex flex-col lg:flex-row lg:gap-4'>
                             {navigation.map((item, index) => (
                                 <Link 
                                     key={index} 
                                     href={item.link} 
                                     className={` duration-300 cursor-pointer 
-                                        ${pathname === item.link ? 'text-blue-600 underline' : 'hover:text-blue-600 no-underline'}`}  // Apply active styles only to the clicked link
+                                        ${pathname === item.link ? 'text-[#36d8e1] underline' : 'hover:text-[#32a6ab] no-underline'}`}  // Apply active styles only to the clicked link
                                     onClick={() => setIsOpen(false)}  // Close menu on link click
                                 >
                                     {item.title}
@@ -62,7 +62,7 @@ const Header = () => {
                             ))}
                         </div>
                         <div>
-                            <button className='bg-yellow-50 text-black p-2 mt-4 lg:mt-0 hover:bg-green-400 duration-300 hover:text-red-700 rounded-md'>
+                            <button className='bg-yellow-50 text-black p-2 mt-4 lg:mt-0 hover:bg-[#32a6ab] duration-300 hover:text-red-700 rounded-md'>
                                 Login
                             </button>
                         </div>

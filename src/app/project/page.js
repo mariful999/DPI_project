@@ -52,7 +52,7 @@ const Project = () => {
   return (
     <Container>
       <div className="py-12">
-        <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">
+        <h1 className="text-4xl font-bold text-center text-[#32a6ab] mb-8">
           Upcoming Courses & News
         </h1>
         <div className="flex flex-wrap gap-8 justify-center">
@@ -62,7 +62,7 @@ const Project = () => {
               className="bg-white shadow-lg rounded-lg overflow-hidden p-6 w-full max-w-md flex flex-col items-center text-center"
             >
               <div className="mb-6">{project.icon}</div>
-              <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+              <h2 className="text-2xl font-semibold mb-4 text-[#32a6ab]">
                 {project.title}
               </h2>
               <p className="text-gray-700 mb-4">{project.description}</p>

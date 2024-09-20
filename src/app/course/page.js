@@ -118,7 +118,7 @@ const Course = () => {
   return (
     <Container>
       <div className="py-12">
-        <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">
+        <h1 className="text-4xl font-bold text-center text-[#32a6ab] mb-8">
           Our Courses
         </h1>
         <div className="flex flex-wrap gap-6">
@@ -138,7 +138,7 @@ const Course = () => {
               <div className="w-full lg:w-1/2 p-6">
                 <h2 className="text-2xl font-semibold mb-4">{course.title}</h2>
                 <div className="text-gray-700 mb-4">{course.description}</div>
-                <div className="text-lg font-bold text-blue-600 mb-2">
+                <div className="text-lg font-bold text-[#32a6ab] mb-2">
                   Fee: {course.fee}
                 </div>
                 <div className="text-gray-800 mb-2">

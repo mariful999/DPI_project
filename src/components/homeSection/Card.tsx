@@ -69,17 +69,17 @@ const Card: React.FC = () => {
 
   return (
     <Container>
-      <div>
+      <div className='pb-20'>
         <div>
-          <h1 className="text-3xl font-bold text-center text-blue-500 underline underline-offset-8 p-10">
+          <h1 className="text-3xl font-bold text-center text-[#32a6ab] underline underline-offset-8 p-10">
             Meet Our Teachers
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-11 lg:p-0 gap-4 shadow-slate-600">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-11 lg:p-0 gap-4 ">
           {cardSection.map((item) => (
             <div
               key={item.id}
-              className="hover:border-black bg-slate-100 p-5 rounded-md duration-500 hover:bg-blue-400 cursor-pointer"
+              className="hover:border-black bg-slate-100 p-5 rounded-md duration-500 hover:bg-[#32a6ab] cursor-pointer"
             >
               <Image src={item.picture} alt="profile" />
               <h1 className="text-center text-2xl font-semibold">
@@ -88,7 +88,7 @@ const Card: React.FC = () => {
               <p className="text-center text-sm h-10">{item.title}</p>
               <div className="text-center">
                 <button
-                  className="p-2 px-8 hover:bg-blue-700 bg-blue-300 rounded-md"
+                  className="p-2 px-8 hover:bg-[#9ce0e3] bg-[#32a6ab] rounded-md"
                   onClick={() => handleDetailsClick(item)}
                 >
                   Details

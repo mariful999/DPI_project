@@ -72,17 +72,17 @@ const OurCourses = () => {
         <Container className='relative py-12 sm:py-16 lg:py-28'>
             <div>
                 <div className='px-4 lg:px-8'>
-                    <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center uppercase underline underline-offset-8 text-blue-600'>Our Courses</h1>
+                    <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center uppercase underline underline-offset-8 text-[#32a6ab]'>Our Courses</h1>
                 </div>
                 <div className='flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row justify-items-center px-4 lg:px-0 gap-6 mt-8'>
                     {cardSection.map((item) => 
-                        <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-blue-500 cursor-pointer'>
+                        <div key={item.id} className='hover:border-black bg-slate-100 p-3 rounded-md duration-500 hover:bg-[#32a6ab] cursor-pointer'>
                             <Image src={item.picture} alt="profile" className='object-cover' />    
                             <h1 className='text-center text-lg sm:text-xl font-semibold'>{item.name}</h1>
                             <p className='text-center text-sm h-10'>{item.title}</p>
                             <div className='text-center'>
                                 <button
-                                    className='p-2 px-6 sm:px-8 hover:bg-blue-700 bg-blue-300 rounded-md'
+                                    className='p-2 px-6 sm:px-8 hover:bg-[#99e8eb] bg-[#32a6ab] rounded-md'
                                     onClick={() => handleDetailsClick(item)}
                                 >
                                     Details
@@ -96,7 +96,7 @@ const OurCourses = () => {
                         <button onClick={closeDetails} className='absolute top-2 right-2 p-2 text-red-600 border border-b-red-600 hover:bg-red-600 hover:text-rose-50 rounded-sm '>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                         </button>
-                        <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold'>{selectedCourse.name}</h2>
+                        <h2 className='text-lg sm:text-2xl lg:text-3xl font-bold'>{selectedCourse.name}</h2>
                         <p className='text-base sm:text-lg mt-4'>{selectedCourse.title}</p>
                         <p className='mt-2'>{selectedCourse.description}</p>
                         <div className='mt-4'>
