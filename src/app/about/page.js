@@ -14,8 +14,8 @@ const Course = () => {
         </h1>
 
         {/* Section 1: How We Work */}
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
-          <FaHandsHelping className="text-6xl md:text-8xl text-blue-600" />
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
+          <FaHandsHelping className="text-6xl md:text-8xl items-center text-blue-600" />
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
               How We Work
@@ -37,7 +37,7 @@ const Course = () => {
         </div>
 
         {/* Section 2: Our Mission */}
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <FaRocket className="text-6xl md:text-7xl text-red-600" />
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
@@ -59,7 +59,7 @@ const Course = () => {
         </div>
 
         {/* Section 3: Course Offerings */}
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <FaBook className="text-5xl md:text-6xl text-green-600" />
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
@@ -81,7 +81,7 @@ const Course = () => {
         </div>
 
         {/* Section 4: Our Values */}
-        <div className="bg-white p-6 md:p-8 pb-8 rounded-lg shadow-lg flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+        <div className="bg-white p-6 md:p-8 pb-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <GiSkills className="text-5xl md:text-6xl text-purple-600" />
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">

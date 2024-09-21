@@ -4,7 +4,8 @@ import Container from '@/app/ui/Container';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { profileImage } from '@/app/assets/index';
-import { FaFacebook, FaEnvelope } from 'react-icons/fa'; // Importing icons from react-icons
+import { FaFacebook, FaEnvelope } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 interface Teacher {
   id: string;
@@ -55,7 +56,7 @@ const Card: React.FC = () => {
       workExperience: "5 years in web development.",
       facebook: "https://www.facebook.com/mdmarifulislam",
       email: "mdmarifulislam@example.com"
-    }
+    },
     // Add other items...
   ];
 
@@ -75,26 +76,29 @@ const Card: React.FC = () => {
             Meet Our Teachers
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-11 lg:p-0 gap-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-11 lg:p-0 gap-4">
           {cardSection.map((item) => (
-            <div
+            <motion.div
               key={item.id}
-              className="hover:border-black bg-slate-100 p-5 rounded-md duration-500 hover:bg-[#32a6ab] cursor-pointer"
+              className="bg-slate-100 p-5 rounded-md cursor-pointer"
+              initial={{ opacity: 0, scale: 0.8 }} // Start scaled down
+              animate={{ opacity: 1, scale: 1 }} // Scale to normal size
+              exit={{ opacity: 0 }} // Fade out on exit
+              transition={{ duration: 0.4 }} // Smooth transition
+              whileHover={{ scale: 1.05, backgroundColor: '#32a6ab', color: '#fff' }} // Scale up and change background on hover
             >
-              <Image src={item.picture} alt="profile" />
-              <h1 className="text-center text-2xl font-semibold">
-                {item.name}
-              </h1>
+              <Image src={item.picture} alt="profile" className="rounded-md mb-4" />
+              <h1 className="text-center text-2xl font-semibold">{item.name}</h1>
               <p className="text-center text-sm h-10">{item.title}</p>
               <div className="text-center">
                 <button
-                  className="p-2 px-8 hover:bg-[#9ce0e3] bg-[#32a6ab] rounded-md"
+                  className="p-2 px-8 hover:bg-[#9ce0e3] bg-[#32a6ab] rounded-md text-white"
                   onClick={() => handleDetailsClick(item)}
                 >
                   Details
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
@@ -102,7 +106,7 @@ const Card: React.FC = () => {
           <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
             <div className="bg-white w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl p-6 rounded-lg relative">
               <button
-                className="absolute top-2 right-2 p-4  border border-red-600 hover:bg-red-500 hover:text-white duration-300 rounded-sm"
+                className="absolute top-2 right-2 p-4 border border-red-600 hover:bg-red-500 hover:text-white duration-300 rounded-sm"
                 onClick={handleCloseOverlay}
               >
                 X
