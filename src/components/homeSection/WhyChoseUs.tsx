@@ -25,7 +25,7 @@ const WhyChoseUs = () => {
             <FaSortAmountUp className='text-5xl text-yellow-500 mb-2 sm:mb-0' />
             <div className='text-center sm:text-left'>
               <h2 className='text-2xl font-bold'>Learn</h2>
-              <p>Our programs encourage a growth mindset, helping you learn skills that will last a lifetime. We're committed to fostering knowledge that evolves with you.</p>
+              <p>Our programs encourage a growth mindset, helping you learn skills that will last a lifetime. We are committed to fostering knowledge that evolves with you.</p>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ const WhyChoseUs = () => {
             <GiBookshelf className='text-5xl text-yellow-500 mb-2 sm:mb-0' />
             <div className='text-center sm:text-left'>
               <h2 className='text-2xl font-bold'>Educate</h2>
-              <p>Education is more than just learning facts—it's about building confidence and skills for the real world. We focus on practical knowledge that empowers you.</p>
+              <p>Education is more than just learning facts about building confidence and skills for the real world. We focus on practical knowledge that empowers you.</p>
             </div>
           </div>
 
