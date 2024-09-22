@@ -1,15 +1,13 @@
 
-
 import saliderOne from "./fast-pnt51.png"
-import saliderTwo from "./fast-pnt52.png"
-import saliderThree from "./fast-pnt53.png"
-import profileImage from "./profil img.jpg"
-import groupImage from "./fast-pnt01.jpg"
-import singleImage1 from "./fast-pnt03.jpg"
-import singleImage2 from "./fast-pnt03.jpg"
+import  profileImage from "./profil img.jpg"
 import bannerImage from "./fast-pnt07.jpg"
 import bannerImage2 from "./images.jpeg"
-import choseUs from "./fast-pnt1.jpg"
 import logo from "./Picture2-removebg-preview.png"
+import choceus  from "./chooseus.png"
+import  chateredLife  from "./chatered life.png"
+import  nationalLife  from "./National Is.jpg"
+import  pragatiLife  from "./pragati life.png"
+import   smartOnline  from "./smart_online_course_cover.jpeg"
 
-export {saliderOne,saliderTwo,saliderThree,profileImage,groupImage,singleImage1,singleImage2,bannerImage,bannerImage2,choseUs,logo}
+export {saliderOne,choceus,chateredLife,nationalLife,smartOnline, pragatiLife, bannerImage,bannerImage2,logo,profileImage}

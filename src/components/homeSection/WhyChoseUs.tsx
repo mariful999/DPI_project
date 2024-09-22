@@ -1,4 +1,4 @@
-import { choseUs } from '@/app/assets'
+import { choceus } from '@/app/assets'
 import Image from 'next/image'
 import React from 'react'
 import { FaSortAmountUp } from "react-icons/fa"; 
@@ -11,7 +11,7 @@ const WhyChoseUs = () => {
       <div className='flex flex-col lg:flex-row justify-between items-center'>
         {/* Image Section */}
         <div className='w-full lg:w-1/2 mb-4 lg:mb-0'>
-          <Image src={choseUs} alt="choseUs" className='w-full h-auto object-cover' />
+          <Image src={choceus} alt="choseUs" className='w-full h-auto object-cover' />
         </div>
 
         {/* Content Section */}

@@ -6,7 +6,7 @@ import Container from '@/app/ui/Container';
 import Image from 'next/image';
 import React from 'react';
 import { StaticImageData } from 'next/image';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import { motion } from 'framer-motion';
 
 // Define the Course type
 type Course = {
@@ -80,7 +80,7 @@ const OurCourses = () => {
                         <motion.div 
                             key={item.id} 
                             className='hover:border-black bg-slate-100 p-3 rounded-md cursor-pointer'
-                            initial={{ opacity: 0, scale: 0.8 }} // Initial state
+                            initial={{ opacity: 0, scale: 0.9 }} // Initial state for small screens
                             animate={{ opacity: 1, scale: 1 }} // Animate to this state
                             transition={{ duration: 0.5 }} // Transition duration
                             whileHover={{ scale: 1.05, backgroundColor: '#32a6ab' }} // Scale and change background on hover
@@ -90,7 +90,7 @@ const OurCourses = () => {
                             <p className='text-center text-sm h-10'>{item.title}</p>
                             <div className='text-center'>
                                 <button
-                                    className='p-2 px-6 sm:px-8 font-semibold tracking-wide hover:bg-[#99e8eb] bg-[#32a6ab] rounded-md'
+                                    className='p-2 px-6 sm:px-8 font- tracking-wide hover:bg-[#99e8eb] bg-[#32a6ab] rounded-md'
                                     onClick={() => handleDetailsClick(item)}
                                 >
                                     Details
@@ -102,10 +102,10 @@ const OurCourses = () => {
                 {selectedCourse && (
                     <motion.div 
                         className={`fixed top-0 left-0 h-full bg-white p-6 rounded-md shadow-lg ${selectedCourse ? 'block' : 'hidden'} z-50 w-full md:w-1/2`}
-                        initial={{ opacity: 0 }} // Initial state for the modal
-                        animate={{ opacity: 1 }} // Animate to this state
-                        exit={{ opacity: 0 }} // Animate exit state
-                        transition={{ duration: 0.3 }} // Transition duration
+                        initial={{ opacity: 0, y: -50 }} // Initial state for the modal
+                        animate={{ opacity: 1, y: 0 }} // Animate to this state
+                        exit={{ opacity: 0, y: -50 }} // Animate exit state
+                        transition={{ duration: 1 }} // Transition duration
                     >
                         <button onClick={closeDetails} className='absolute top-2 right-2 p-2 text-red-600 border border-b-red-600 hover:bg-red-600 hover:text-rose-50 rounded-sm '>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
