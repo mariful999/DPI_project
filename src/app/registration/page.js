@@ -74,7 +74,7 @@ const Registration = () => {
                   type="text"
                   className="peer block w-full rounded border border-gray-300 bg-transparent px-3 py-2 leading-6 outline-none transition-all duration-200 ease-linear focus:border-primary focus:text-primary"
                   id="email"
-                  placeholder="Email address"
+                  placeholder=""
                 />
                 <label
                   htmlFor="email"
@@ -89,7 +89,7 @@ const Registration = () => {
                   type="password"
                   className="peer block w-full rounded border border-gray-300 bg-transparent px-3 py-2 leading-6 outline-none transition-all duration-200 ease-linear focus:border-primary focus:text-primary"
                   id="password"
-                  placeholder="Password"
+                  placeholder=""
                 />
                 <label
                   htmlFor="password"
