@@ -104,7 +104,7 @@ const Header = () => {
                   className="bg-yellow-50 text-black p-2 hover:bg-[#91eef1] duration-300 hover:text-red-700 rounded-md"
                   
                 >
-                  Login
+                  register now
                 </button>
               </Link>
             </motion.div>
