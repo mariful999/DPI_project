@@ -1,55 +1,76 @@
-import { choceus } from '@/app/assets'
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import { choceus } from '@/app/assets';
+import Image from 'next/image';
+import React from 'react';
 import { FaSortAmountUp } from "react-icons/fa"; 
 import { GiBookshelf } from "react-icons/gi";
 import { BsPersonArmsUp } from "react-icons/bs";
+import { motion } from 'framer-motion';
 
-const WhyChoseUs = () => {
+const WhyChooseUs = () => {
   return (
-    <div className='bg-[#32a6ab] p-4'>
+    <div className=' p-8 lg:p-16'>
       <div className='flex flex-col lg:flex-row justify-between items-center'>
-        {/* Image Section */}
-        <div className='w-full lg:w-1/2 mb-4 lg:mb-0'>
-          <Image src={choceus} alt="choseUs" className='w-full h-auto object-cover' />
+        <div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
+          <Image 
+            src={choceus} 
+            alt="Why Choose Us" 
+            className='w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105' 
+          />
         </div>
 
-        {/* Content Section */}
-        <div className='text-white w-full lg:w-1/2 flex flex-col'>
-          <h1 className='text-3xl md:text-4xl uppercase font-semibold text-center p-6 underline underline-offset-8'>
+        <div className=' w-full lg:w-1/2 flex flex-col'>
+          <motion.h1 
+            className='text-4xl md:text-5xl font-extrabold text-center p-6 mb-6 bg-gradient-to-r from-orange-500 to-yellow-400 text-transparent bg-clip-text'
+            initial={{ opacity: 0, y: -20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}
+          >
             Why Choose Us
-          </h1>
-          
-          {/* Learn Section */}
-          <div className='p-4 flex items-center flex-col sm:flex-row gap-4'>
-            <FaSortAmountUp className='text-5xl text-yellow-500 mb-2 sm:mb-0' />
-            <div className='text-center sm:text-left'>
+          </motion.h1>
+
+          <motion.div 
+            className='p-6 flex items-center bg-white rounded-lg shadow-md mb-4 transition-transform duration-300 hover:shadow-lg'
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}
+          >
+            <FaSortAmountUp className='text-6xl text-[#ff5722] mr-4' />
+            <div>
               <h2 className='text-2xl font-bold'>Learn</h2>
-              <p>Our programs encourage a growth mindset, helping you learn skills that will last a lifetime. We are committed to fostering knowledge that evolves with you.</p>
+              <p className='text-md text-gray-700'>Our programs cultivate a growth mindset, ensuring you acquire skills that will benefit you for a lifetime. We are dedicated to providing knowledge that evolves alongside you.</p>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Educate Section */}
-          <div className='p-4 flex items-center flex-col sm:flex-row gap-4'>
-            <GiBookshelf className='text-5xl text-yellow-500 mb-2 sm:mb-0' />
-            <div className='text-center sm:text-left'>
+          <motion.div 
+            className='p-6 flex items-center bg-white rounded-lg shadow-md mb-4 transition-transform duration-300 hover:shadow-lg'
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}
+          >
+            <GiBookshelf className='text-6xl text-[#ff5722] mr-4' />
+            <div>
               <h2 className='text-2xl font-bold'>Educate</h2>
-              <p>Education is more than just learning facts about building confidence and skills for the real world. We focus on practical knowledge that empowers you.</p>
+              <p className='text-md text-gray-700'>Education is more than memorization; it’s about developing confidence and real-world skills. We emphasize practical knowledge that empowers you to thrive.</p>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Empower Section */}
-          <div className='p-4 flex items-center flex-col sm:flex-row gap-4'>
-            <BsPersonArmsUp className='text-5xl text-yellow-500 mb-2 sm:mb-0' />
-            <div className='text-center sm:text-left'>
+          <motion.div 
+            className='p-6 flex items-center bg-white rounded-lg shadow-md mb-4 transition-transform duration-300 hover:shadow-lg'
+            initial={{ opacity: 0, y: 20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}
+          >
+            <BsPersonArmsUp className='text-6xl text-[#ff5722] mr-4' />
+            <div>
               <h2 className='text-2xl font-bold'>Empower</h2>
-              <p>We empower learners to achieve their personal and professional goals, helping them become confident, capable individuals ready to succeed in life.</p>
+              <p className='text-md text-gray-700'>We empower learners to reach their personal and professional goals, transforming them into confident, capable individuals prepared to excel in life.</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default WhyChoseUs
+export default WhyChooseUs;
