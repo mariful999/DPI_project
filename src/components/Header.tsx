@@ -50,11 +50,7 @@ const Header = () => {
           {/* Logo */}
           <div className="cursor-pointer">
             <Link href="/">
-              <Image
-                src={logo}
-                alt="logo"
-                className="w-32 lg:w-44 rounded-md duration-300"
-              />
+             <h1 className="uppercase font-bold text-orange-500 text-2xl hover:text-xl">Logic  It Center</h1>
             </Link>
           </div>
 
@@ -85,7 +81,7 @@ const Header = () => {
                   <Link
                     href={item.link}
                     className={`duration-300 cursor-pointer 
-                      ${pathname === item.link ? "text-[#36d8e1] underline" : "hover:text-[#bbeef0] no-underline"}`}  // Active link styling
+                      ${pathname === item.link ? "text-orange-500 underline" : " no-underline"}`}  // Active link styling
                     onClick={() => {
                       setIsOpen(false);  // Close the menu when a link is clicked
                       window.scrollTo(0, 0);
@@ -101,10 +97,10 @@ const Header = () => {
             <motion.div className="mt-4 lg:mt-0">
               <Link href="/login">
                 <button
-                  className="bg-yellow-50 text-black p-2 hover:bg-[#91eef1] duration-300 hover:text-red-700 rounded-md"
+                  className="bg-yellow-50 text-black p-2 hover:bg-orange-500 duration-300 hover:text-red-700 rounded-md"
                   
                 >
-                  register now
+                  Log in
                 </button>
               </Link>
             </motion.div>
