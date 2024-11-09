@@ -2,105 +2,174 @@
 
 import React from "react";
 import Container from "../ui/Container";
-import { FaHandsHelping, FaRocket, FaBook } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
+import { FaLaptopCode, FaUsers, FaBullhorn } from "react-icons/fa";
+import { GiTrophyCup } from "react-icons/gi";
+import Image from "next/image";
 
-const Course = () => {
+const AboutLogicITCenter = () => {
   return (
     <Container>
       <div className="p-4 bg-gray-50">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center text-[#32a6ab] mb-12">
-          About Memoir Academy
+        <h1 className="text-3xl md:text-4xl font-extrabold text-center text-orange-500 mb-12">
+          About Logic IT Center
         </h1>
 
-        {/* Section 1: How We Work */}
+        {/* Section 1: Our Approach */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
-          <FaHandsHelping className="text-6xl md:text-8xl items-center text-blue-600" />
+          <FaLaptopCode className="text-6xl md:text-8xl items-center text-orange-500" />
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
-              How We Work
+            <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 md:mb-6">
+              Our Approach
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              At Memoir Academy, we prioritize hands-on learning and real-world
-              application. Our programs are designed to offer practical
-              experience that you can apply directly to your career.
+              At Logic IT Center, we focus on equipping learners with
+              industry-relevant IT skills through hands-on training and
+              real-world experience.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Each course includes interactive lessons, real-life projects, and
-              personalized feedback from industry professionals.
+              Our approach includes practical projects, real-life scenarios, and
+              industry mentors to ensure our students are job-ready.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              We offer video tutorials, hands-on assignments, and group
-              discussions to cater to different learning styles.
+              We combine flexible online learning with interactive sessions to
+              make learning both effective and enjoyable.
             </p>
           </div>
         </div>
 
-        {/* Section 2: Our Mission */}
+        {/* Section 2: Our Vision */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
-          <FaRocket className="text-6xl md:text-7xl text-red-600" />
+          <FaBullhorn className="text-6xl md:text-7xl text-orange-500" />
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
-              Our Mission
+            <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 md:mb-6">
+              Our Vision
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Our mission at Memoir Academy is to provide high-quality education
-              that empowers individuals to achieve their professional goals.
+              Logic IT Center envisions becoming a leading provider of IT
+              education, empowering students to succeed in the ever-evolving
+              tech industry.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              We aim to bridge the gap between education and industry by
-              offering courses aligned with market trends.
+              We aim to foster a community of learners who are passionate about
+              technology and ready to tackle the challenges of tomorrow's
+              digital world.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              We offer flexible learning options to fit your busy schedule and
-              help you advance your career.
+              Our vision is to create a platform where learners of all
+              backgrounds can develop the technical expertise needed to make a
+              difference.
             </p>
           </div>
         </div>
 
-        {/* Section 3: Course Offerings */}
+        {/* Section 3: Our Courses */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
-          <FaBook className="text-5xl md:text-6xl text-green-600" />
+          <GiTrophyCup className="text-5xl md:text-6xl text-orange-500" />
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
-              Course Offerings
+            <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 md:mb-6">
+              Our Courses
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Memoir Academy offers a variety of courses, including web
-              development, digital marketing, data science, and more.
+              Logic IT Center offers cutting-edge courses in Web Development,
+              Cybersecurity, Cloud Computing, Data Science, and more.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Each course is designed by industry experts and includes hands-on
-              projects to simulate real-world scenarios.
+              Each course is designed with practical exercises, case studies,
+              and a hands-on learning approach to ensure you develop marketable
+              skills.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
               Our programs are flexible, allowing you to learn at your own pace
-              and fit them into your schedule.
+              while still receiving the support needed to succeed.
             </p>
           </div>
         </div>
 
         {/* Section 4: Our Values */}
         <div className="bg-white p-6 md:p-8 pb-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
-          <GiSkills className="text-5xl md:text-6xl text-purple-600" />
+          <FaUsers className="text-5xl md:text-6xl text-orange-500" />
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#32a6ab] mb-4 md:mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 md:mb-6">
               Our Values
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              At Memoir Academy, we are driven by integrity, excellence, and
-              innovation. We believe in creating a supportive and inclusive
-              environment for all.
+              At Logic IT Center, we prioritize integrity, teamwork, and
+              innovation in everything we do.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Our team is committed to providing exceptional support and
-              ensuring that every learner has the resources they need to
-              succeed.
+              We believe in creating an inclusive and supportive learning
+              environment, where every student is encouraged to achieve their
+              goals.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              By embracing change and striving for excellence, we aim to make a
-              positive impact on the lives of our learners.
+              We are committed to continuous improvement, always adapting to the
+              latest technological trends to offer the best learning experience.
             </p>
+          </div>
+        </div>
+
+        {/* Section 5: Meet the Team */}
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-6 text-center">
+            Meet the Team
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            {/* CEO */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="CEO"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                John Doe
+              </h3>
+              <p className="text-sm text-gray-700">
+                CEO & Founder of Logic IT Center. John brings over 15 years of
+                experience in the tech industry, having worked with top tech
+                firms and leading teams to success.
+              </p>
+            </div>
+
+            {/* Manager */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="Manager"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                Jane Smith
+              </h3>
+              <p className="text-sm text-gray-700">
+                Manager at Logic IT Center. With over 10 years of experience in
+                IT education and training, Jane ensures the smooth running of
+                all courses and the overall student experience.
+              </p>
+            </div>
+
+            {/* Founder */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="Founder"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                Michael Brown
+              </h3>
+              <p className="text-sm text-gray-700">
+                Founder of Logic IT Center. Michael is passionate about bridging
+                the gap between tech education and industry needs, ensuring all
+                our programs are aligned with current market trends.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -108,4 +177,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default AboutLogicITCenter;

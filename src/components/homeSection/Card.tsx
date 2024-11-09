@@ -19,12 +19,13 @@ interface Teacher {
 
 const Card: React.FC = () => {
   const [selectedTeacher, setSelectedTeacher] = useState<Teacher | null>(null);
+  const [visibleTeachers, setVisibleTeachers] = useState<number>(4); // Initially show 4 teachers
 
   const cardSection: Teacher[] = [
     {
       id: "1",
       picture: profileImage,
-      name: "MD Mariful islam",
+      name: "MD Mariful Islam",
       title: "Web Developer",
       workExperience: "5 years in web development.",
       facebook: "https://www.facebook.com/mdmarifulislam",
@@ -33,31 +34,49 @@ const Card: React.FC = () => {
     {
       id: "2",
       picture: profileImage,
-      name: "MD Mariful islam",
-      title: "Web Developer",
-      workExperience: "5 years in web development.",
-      facebook: "https://www.facebook.com/mdmarifulislam",
-      email: "mdmarifulislam@example.com"
+      name: "Jane Doe",
+      title: "Graphic Designer",
+      workExperience: "3 years in graphic design.",
+      facebook: "https://www.facebook.com/janedoe",
+      email: "janedoe@example.com"
     },
     {
       id: "3",
       picture: profileImage,
-      name: "MD Mariful islam",
-      title: "Web Developer",
-      workExperience: "5 years in web development.",
-      facebook: "https://www.facebook.com/mdmarifulislam",
-      email: "mdmarifulislam@example.com"
+      name: "John Smith",
+      title: "Data Analyst",
+      workExperience: "4 years in data analysis.",
+      facebook: "https://www.facebook.com/johnsmith",
+      email: "johnsmith@example.com"
     },
     {
       id: "4",
       picture: profileImage,
-      name: "MD Mariful islam",
-      title: "Web Developer",
-      workExperience: "5 years in web development.",
-      facebook: "https://www.facebook.com/mdmarifulislam",
-      email: "mdmarifulislam@example.com"
+      name: "Alice Johnson",
+      title: "Digital Marketing Specialist",
+      workExperience: "6 years in digital marketing.",
+      facebook: "https://www.facebook.com/alicejohnson",
+      email: "alicejohnson@example.com"
     },
-    // Add other items...
+    {
+      id: "5",
+      picture: profileImage,
+      name: "Bob Brown",
+      title: "Software Engineer",
+      workExperience: "4 years in software development.",
+      facebook: "https://www.facebook.com/bobbrown",
+      email: "bobbrown@example.com"
+    },
+    {
+      id: "6",
+      picture: profileImage,
+      name: "Emily Davis",
+      title: "Project Manager",
+      workExperience: "7 years in project management.",
+      facebook: "https://www.facebook.com/emilydavis",
+      email: "emilydavis@example.com"
+    },
+    // You can add more teachers here...
   ];
 
   const handleDetailsClick = (teacher: Teacher) => {
@@ -66,6 +85,10 @@ const Card: React.FC = () => {
 
   const handleCloseOverlay = () => {
     setSelectedTeacher(null);
+  };
+
+  const handleShowMore = () => {
+    setVisibleTeachers((prev) => prev + 2); // Show 2 more teachers
   };
 
   return (
@@ -77,22 +100,22 @@ const Card: React.FC = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-11 lg:p-0 gap-4">
-          {cardSection.map((item) => (
+          {cardSection.slice(0, visibleTeachers).map((item) => (
             <motion.div
               key={item.id}
-              className="bg-slate-100 p-5 rounded-md cursor-pointer"
+              className="bg-slate-100 p-5 rounded-md cursor-pointer transition duration-300"
               initial={{ opacity: 0, scale: 0.8 }} // Start scaled down
               animate={{ opacity: 1, scale: 1 }} // Scale to normal size
               exit={{ opacity: 0 }} // Fade out on exit
               transition={{ duration: 0.4 }} // Smooth transition
-              whileHover={{ scale: 1.05, backgroundColor: '#32a6ab', color: '#fff' }} // Scale up and change background on hover
+              whileHover={{ scale: 1.05, backgroundColor: '#ff5722', color: '#fff' }} // Scale up and change background on hover
             >
               <Image src={item.picture} alt="profile" className="rounded-md mb-4" />
               <h1 className="text-center text-2xl font-semibold">{item.name}</h1>
               <p className="text-center text-sm h-10">{item.title}</p>
               <div className="text-center">
                 <button
-                  className="p-2 px-8 hover:bg-[#9ce0e3] bg-[#32a6ab] rounded-md text-white"
+                  className="p-2 px-8 hover:bg-orange-300 bg-orange-500 rounded-md text-white"
                   onClick={() => handleDetailsClick(item)}
                 >
                   Details
@@ -140,6 +163,18 @@ const Card: React.FC = () => {
                 </div>
               </div>
             </div>
+          </div>
+        )}
+
+        {/* Show More Button */}
+        {visibleTeachers < cardSection.length && ( // Only show button if there are more teachers to display
+          <div className="text-center mt-10">
+            <button
+              className="p-2 px-6 bg-orange-500 text-white rounded-md hover:bg-[#ff5722] transition duration-300"
+              onClick={handleShowMore}
+            >
+              Show More
+            </button>
           </div>
         )}
       </div>

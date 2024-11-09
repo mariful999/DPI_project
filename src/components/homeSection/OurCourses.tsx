@@ -128,7 +128,7 @@ const OurCourses = () => {
                             <p className='text-center text-sm h-10'>{item.title}</p>
                             <div className='text-center'>
                                 <button
-                                    className='p-2 px-6 sm:px-8 font- tracking-wide hover:bg-[#99e8eb] bg-[#32a6ab] rounded-md'
+                                    className='p-2 px-6 sm:px-8 font- tracking-wide hover:bg-orange-300 bg-orange-500 rounded-md'
                                     onClick={() => handleDetailsClick(item)}
                                 >
                                     Details
@@ -140,7 +140,7 @@ const OurCourses = () => {
                 <div className='text-center mt-6'>
                     <button 
                         onClick={toggleShowMore} 
-                        className='p-2 px-6 font-semibold bg-[#32a6ab] hover:bg-[#99e8eb] rounded-md'
+                        className='p-2 px-6 font-semibold bg-orange-500 hover:bg-orange-300 rounded-md'
                     >
                         {showMore ? "Show Less" : "Show More"}
                     </button>

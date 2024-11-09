@@ -1,16 +1,29 @@
-import { smartOnline } from '@/app/assets'
-import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
 const Partner = () => {
   return (
-    <div className='bg-[#32a6ab] h-60 '>
-      <div><h1 className='uppercase text-center font-bold text-3xl p-5'>Global Partner</h1></div>
-      <div className='flex justify-center'>
-        <Image src={smartOnline} alt="smartOnline" className=' p-2 object-contain w-52 rounded-md' />
+    <div className='bg-orange-300 h-60'>
+      <div>
+        <h1 className='uppercase text-center font-bold text-3xl p-5'>Global Partner</h1>
+      </div>
+      <div className='flex justify-center gap-4'>
+        {/* Partner 1 */}
+        <div className='bg-white p-4 rounded-lg shadow-md'>
+          <p className='text-center font-semibold'>Smart Online</p>
+        </div>
+        
+        {/* Partner 2 */}
+        <div className='bg-white p-4 rounded-lg shadow-md'>
+          <p className='text-center font-semibold'>Global IT Institute</p>
+        </div>
+
+        {/* Additional partners if needed */}
+        <div className='bg-white p-4 rounded-lg shadow-md'>
+          <p className='text-center font-semibold'>Fake Image Placeholder</p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Partner
+export default Partner;
