@@ -31,7 +31,7 @@ const AboutLogicITCenter = () => {
                 className="rounded-full mb-4"
               />
               <h3 className="text-xl font-semibold text-orange-500 mb-2">
-                John Doe
+                Md Mariful Islam
               </h3>
               <p className="text-sm text-gray-700">
                 CEO & Founder of Logic IT Center. John brings over 15 years of

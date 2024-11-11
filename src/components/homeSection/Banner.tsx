@@ -8,9 +8,9 @@ const Banner = () => {
     <Container className='py-0 relative'>
       <div className='relative lg:h-full'>
         <Image src={background_banner} alt="banner" className='h-96 w-full object-cover' />
-        <div className='absolute top-2 lg:p-20 px-4 text-orange-600'>
+        <div className='absolute top-20 lg:top-2  lg:p-20 px-4 text-orange-600 '>
           <p className='text-sm lg:text-xl font-semibold'>Empowering Your Tech Journey</p>
-          <h1 className='text-2xl lg:text-5xl font-bold mt-2'>
+          <h1 className='text-2xl lg:text-5xl items-center font-bold mt-2'>
             Welcome to Logic IT Center –<br /> 
             Your Gateway to Future Skills
           </h1>

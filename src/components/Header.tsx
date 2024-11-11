@@ -1,4 +1,5 @@
 "use client";
+import { logo } from "@/app/assets";
 import Container from "@/app/ui/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +50,7 @@ const Header = () => {
           {/* Logo */}
           <div className="cursor-pointer">
             <Link href="/">
-             <h1 className="uppercase font-bold text-orange-500 duration-500 text-2xl hover:text-xl">Logic  It Center</h1>
+             <h1 className="uppercase font-bold text-orange-500 text-2xl hover:text-xl">Logic  It Center</h1>
             </Link>
           </div>
 
@@ -64,7 +65,7 @@ const Header = () => {
           <div
             className={`${
               isOpen ? "block" : "hidden"  // Show or hide the mobile menu
-            } lg:flex lg:items-center lg:gap-4 absolute lg:static top-20 right-0 lg:w-auto bg-[#32a6ab] lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}
+            } lg:flex lg:items-center lg:gap-4 absolute lg:static top-20 right-0 lg:w-auto bg-[#5490f0] lg:bg-transparent font-semibold p-4 lg:p-0 shadow-lg lg:shadow-none z-10 lg:z-auto`}
           >
             {/* Links */}
             <div className="flex flex-col lg:flex-row lg:gap-4">
