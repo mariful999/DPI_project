@@ -50,7 +50,7 @@ const Header = () => {
           {/* Logo */}
           <div className="cursor-pointer">
             <Link href="/">
-             <h1 className="uppercase font-bold text-orange-500 text-2xl hover:text-xl">Logic  It Center</h1>
+             <h1 className="uppercase font-bold text-orange-500 duration-500 text-2xl hover:text-xl">Logic  It Center</h1>
             </Link>
           </div>
 

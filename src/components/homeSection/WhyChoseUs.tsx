@@ -10,12 +10,12 @@ import { motion } from 'framer-motion';
 const WhyChooseUs = () => {
   return (
     <div className=' p-8 lg:p-16'>
-      <div className='flex flex-col lg:flex-row justify-between items-center'>
-        <div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
+      <div className='flex flex-col lg:flex-row justify-between gap-5  items-center'>
+        <div className='w-full lg:w-1/2 mb-8   lg:mb-0'>
           <Image 
             src={choceus} 
             alt="Why Choose Us" 
-            className='w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105' 
+            className='w-full h-auto object-cover rounded-lg  transition-transform duration-300 hover:scale-105' 
           />
         </div>
 

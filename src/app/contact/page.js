@@ -28,7 +28,7 @@ const Contact = () => {
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-orange-500 text-2xl" />
                 <span className="text-lg text-gray-700">
-                  e-mail: mdmarifulislammugdho50@gmail.com
+                  G-mail: mdmarifulislammugdho50@gmail.com
                 </span>
               </div>
               <div className="flex items-center gap-4">

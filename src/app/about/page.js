@@ -1,5 +1,6 @@
 "use client";
 
+import { profileImage } from "@/app/assets"; // Ensure the correct image import
 import React from "react";
 import Container from "../ui/Container";
 import { FaLaptopCode, FaUsers, FaBullhorn } from "react-icons/fa";
@@ -14,7 +15,7 @@ const AboutLogicITCenter = () => {
           About Logic IT Center
         </h1>
 
-        {/* Section 5: Meet the Team (Moved to the Top) */}
+        {/* Meet the Team */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-6 text-center">
             Meet the Team
@@ -23,77 +24,73 @@ const AboutLogicITCenter = () => {
             {/* CEO */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
               <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="CEO"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
+                src={profileImage} // Assuming the image path is correct
+                alt="John Doe - CEO"
+                width={120}
+                height={120}
+                className="rounded-full mb-4"
               />
               <h3 className="text-xl font-semibold text-orange-500 mb-2">
                 John Doe
               </h3>
               <p className="text-sm text-gray-700">
                 CEO & Founder of Logic IT Center. John brings over 15 years of
-                experience in the tech industry, having worked with top tech
-                firms and leading teams to success.
+                experience in the tech industry.
               </p>
             </div>
 
             {/* Manager */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
               <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="Manager"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
+                src={profileImage} // Same image source (or use different ones for each)
+                alt="Jane Smith - Manager"
+                width={120}
+                height={120}
+                className="rounded-full mb-4"
               />
               <h3 className="text-xl font-semibold text-orange-500 mb-2">
                 Jane Smith
               </h3>
               <p className="text-sm text-gray-700">
                 Manager at Logic IT Center. With over 10 years of experience in
-                IT education and training, Jane ensures the smooth running of
-                all courses and the overall student experience.
+                IT education, Jane ensures smooth course operations.
               </p>
             </div>
 
             {/* Founder */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
               <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="Founder"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
+                src={profileImage} // Same image source (or use different ones for each)
+                alt="Michael Brown - Founder"
+                width={120}
+                height={120}
+                className="rounded-full mb-4"
               />
               <h3 className="text-xl font-semibold text-orange-500 mb-2">
                 Michael Brown
               </h3>
               <p className="text-sm text-gray-700">
                 Founder of Logic IT Center. Michael is passionate about bridging
-                the gap between tech education and industry needs, ensuring all
-                our programs are aligned with current market trends.
+                tech education with industry needs.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Section 1: Our Approach */}
+        {/* Our Approach */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
-          <FaLaptopCode className="text-6xl md:text-8xl items-center text-orange-500" />
+          <FaLaptopCode className="text-6xl md:text-8xl text-orange-500" />
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-4 md:mb-6">
               Our Approach
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              At Logic IT Center, we focus on equipping learners with
-              industry-relevant IT skills through hands-on training and
-              real-world experience.
+              At Logic IT Center, we equip learners with industry-relevant IT
+              skills through hands-on training and real-world experience.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
               Our approach includes practical projects, real-life scenarios, and
-              industry mentors to ensure our students are job-ready.
+              industry mentors to ensure job-readiness.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
               We combine flexible online learning with interactive sessions to
@@ -102,7 +99,7 @@ const AboutLogicITCenter = () => {
           </div>
         </div>
 
-        {/* Section 2: Our Vision */}
+        {/* Our Vision */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <FaBullhorn className="text-6xl md:text-7xl text-orange-500" />
           <div>
@@ -110,24 +107,21 @@ const AboutLogicITCenter = () => {
               Our Vision
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Logic IT Center envisions becoming a leading provider of IT
-              education, empowering students to succeed in the ever-evolving
-              tech industry.
+              We aim to become a leading provider of IT education, empowering
+              students to succeed in the tech industry.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              We aim to foster a community of learners who are passionate about
-              technology and ready to tackle the challenges of tomorrow's
-              digital world.
+              We foster a community of passionate learners ready to tackle
+              tomorrow's digital challenges.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              Our vision is to create a platform where learners of all
-              backgrounds can develop the technical expertise needed to make a
-              difference.
+              Our vision is to create a platform where learners develop the
+              expertise needed to make a difference.
             </p>
           </div>
         </div>
 
-        {/* Section 3: Our Courses */}
+        {/* Our Courses */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <GiTrophyCup className="text-5xl md:text-6xl text-orange-500" />
           <div>
@@ -136,21 +130,20 @@ const AboutLogicITCenter = () => {
             </h2>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
               Logic IT Center offers cutting-edge courses in Web Development,
-              Cybersecurity, Cloud Computing, Data Science, and more.
+              Cybersecurity, Cloud Computing, and Data Science.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              Each course is designed with practical exercises, case studies,
-              and a hands-on learning approach to ensure you develop marketable
-              skills.
+              Each course is designed with practical exercises and hands-on
+              learning to develop marketable skills.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              Our programs are flexible, allowing you to learn at your own pace
-              while still receiving the support needed to succeed.
+              Our flexible programs allow you to learn at your own pace while
+              receiving support to succeed.
             </p>
           </div>
         </div>
 
-        {/* Section 4: Our Values */}
+        {/* Our Values */}
         <div className="bg-white p-6 md:p-8 pb-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <FaUsers className="text-5xl md:text-6xl text-orange-500" />
           <div>
@@ -162,13 +155,12 @@ const AboutLogicITCenter = () => {
               innovation in everything we do.
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
-              We believe in creating an inclusive and supportive learning
-              environment, where every student is encouraged to achieve their
-              goals.
+              We believe in creating an inclusive and supportive environment
+              where every student is encouraged to succeed.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
-              We are committed to continuous improvement, always adapting to the
-              latest technological trends to offer the best learning experience.
+              We are committed to continuous improvement, adapting to the latest
+              tech trends to provide the best learning experience.
             </p>
           </div>
         </div>
