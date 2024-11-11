@@ -30,7 +30,7 @@ const Welcome = () => {
         <div className='p-4  bg-white rounded-lg shadow-md mt-8'>
           <p className='text-xl font-semibold py-2 text-[#ff5722]'>Introduction</p>
           <p className='text-md text-slate-700'>
-            At Logic IT Center, we empower the next generation of professionals through innovative training and skill development. Established in January 2024, our mission is to equip young citizens of Bangladesh with the tools and knowledge they need to thrive in today's dynamic financial landscape.
+            At Logic IT Center, we empower the next generation of professionals through innovative training and skill development. Established in January 2024, our mission is to equip young citizens of Bangladesh with the tools and knowledge they need to thrive in todays dynamic financial landscape.
           </p>
           <p className='text-md text-slate-700 mt-2'>
             Our programs include comprehensive training in various sectors, such as insurance and finance, as well as essential soft skills development. We organize impactful workshops, seminars, and experiential learning opportunities that engage participants and foster real-world skills.

@@ -112,7 +112,7 @@ const AboutLogicITCenter = () => {
             </p>
             <p className="text-sm md:text-lg text-gray-700 mb-4">
               We foster a community of passionate learners ready to tackle
-              tomorrow's digital challenges.
+              tomorrows digital challenges.
             </p>
             <p className="text-sm md:text-lg text-gray-700">
               Our vision is to create a platform where learners develop the
