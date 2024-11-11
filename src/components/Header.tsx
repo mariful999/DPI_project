@@ -1,5 +1,4 @@
 "use client";
-import { logo } from "@/app/assets";
 import Container from "@/app/ui/Container";
 import Image from "next/image";
 import Link from "next/link";
