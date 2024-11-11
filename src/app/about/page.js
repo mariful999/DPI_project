@@ -14,6 +14,71 @@ const AboutLogicITCenter = () => {
           About Logic IT Center
         </h1>
 
+        {/* Section 5: Meet the Team (Moved to the Top) */}
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-6 text-center">
+            Meet the Team
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            {/* CEO */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="CEO"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                John Doe
+              </h3>
+              <p className="text-sm text-gray-700">
+                CEO & Founder of Logic IT Center. John brings over 15 years of
+                experience in the tech industry, having worked with top tech
+                firms and leading teams to success.
+              </p>
+            </div>
+
+            {/* Manager */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="Manager"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                Jane Smith
+              </h3>
+              <p className="text-sm text-gray-700">
+                Manager at Logic IT Center. With over 10 years of experience in
+                IT education and training, Jane ensures the smooth running of
+                all courses and the overall student experience.
+              </p>
+            </div>
+
+            {/* Founder */}
+            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <Image
+                src="/assets/profil-img.jpg" // Corrected image path
+                alt="Founder"
+                width={120} // Set the width of the image
+                height={120} // Set the height of the image
+                className="rounded-full mb-4" // Circular image
+              />
+              <h3 className="text-xl font-semibold text-orange-500 mb-2">
+                Michael Brown
+              </h3>
+              <p className="text-sm text-gray-700">
+                Founder of Logic IT Center. Michael is passionate about bridging
+                the gap between tech education and industry needs, ensuring all
+                our programs are aligned with current market trends.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Section 1: Our Approach */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row items-center lg:items-start space-y-4 md:space-y-0 md:space-x-6">
           <FaLaptopCode className="text-6xl md:text-8xl items-center text-orange-500" />
@@ -105,71 +170,6 @@ const AboutLogicITCenter = () => {
               We are committed to continuous improvement, always adapting to the
               latest technological trends to offer the best learning experience.
             </p>
-          </div>
-        </div>
-
-        {/* Section 5: Meet the Team */}
-        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-6 text-center">
-            Meet the Team
-          </h2>
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            {/* CEO */}
-            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
-              <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="CEO"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
-              />
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">
-                John Doe
-              </h3>
-              <p className="text-sm text-gray-700">
-                CEO & Founder of Logic IT Center. John brings over 15 years of
-                experience in the tech industry, having worked with top tech
-                firms and leading teams to success.
-              </p>
-            </div>
-
-            {/* Manager */}
-            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
-              <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="Manager"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
-              />
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">
-                Jane Smith
-              </h3>
-              <p className="text-sm text-gray-700">
-                Manager at Logic IT Center. With over 10 years of experience in
-                IT education and training, Jane ensures the smooth running of
-                all courses and the overall student experience.
-              </p>
-            </div>
-
-            {/* Founder */}
-            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col items-center text-center">
-              <Image
-                src="/assets/profil-img.jpg" // Corrected image path
-                alt="Founder"
-                width={120} // Set the width of the image
-                height={120} // Set the height of the image
-                className="rounded-full mb-4" // Circular image
-              />
-              <h3 className="text-xl font-semibold text-orange-500 mb-2">
-                Michael Brown
-              </h3>
-              <p className="text-sm text-gray-700">
-                Founder of Logic IT Center. Michael is passionate about bridging
-                the gap between tech education and industry needs, ensuring all
-                our programs are aligned with current market trends.
-              </p>
-            </div>
           </div>
         </div>
       </div>
